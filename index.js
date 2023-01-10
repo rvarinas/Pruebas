@@ -8,3 +8,5 @@ const mymodule = require("bindings")("mymodule");//el .node no es necesario
 const sum = mymodule.suma(2,2);
 
 console.log("El resultado de la suma es :", sum);//mostramos el resultado 
+
+//No se programar, nueva linea
