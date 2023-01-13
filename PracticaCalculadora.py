@@ -17,6 +17,12 @@ def Division(num1,num2):
 def Raiz(num1):
     return np.sqrt(num1)
 
+def Exponencial(num1):
+    return np.exp(num1)
+
+def Seno(num1):
+    return np.sin(num1)
+
 def menu():
     
         os.system('clear')
@@ -88,6 +94,25 @@ while True:
         print('El resultado de la raiz de',num1,'=',Raiz(num1))
         print('')
         input('Enter para regresar al menu')
+
+    elif opciones_menu=='6':
+        print('')
+        print('Seleccionaste exponencial')
+        print('')
+        num1=int(input('Ingresa el valor base: '))
+        print('El resultado del exponencial de',num1,'=',Exponencial(num1))
+        print('')
+        input('Enter para regresar al menu')
+    
+    elif opciones_menu=='7':
+        print('')
+        print('Seleccionaste Seno')
+        print('')
+        num1=int(input('Ingresa el valor: '))
+        print('El resultado del Seno de',num1,'= ',Seno(num1))
+        print('')
+        input('Enter para regresa al menu')
+
 
     elif opciones_menu=='8':
         break
